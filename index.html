@@ -5,26 +5,20 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Your Name | Online Psychotherapist</title>
+<title>Simran Surve | Online Psychotherapist</title>
 
-<!-- SEO Meta Tags -->
+<!-- SEO Meta -->
 
 <meta name="description" content="Professional online therapy for anxiety, stress, depression, and relationship issues. Book confidential sessions with an experienced psychotherapist available worldwide.">
-<meta name="keywords" content="online therapy, psychotherapist, anxiety therapy, depression counseling, relationship counseling, mental health therapist, online counseling worldwide">
+<meta name="keywords" content="online therapy, psychotherapist, anxiety therapy, depression counseling, relationship counseling">
 <meta name="author" content="Your Name">
 <meta name="robots" content="index, follow">
 
 <!-- Open Graph -->
 
 <meta property="og:title" content="Your Name | Online Psychotherapist">
-<meta property="og:description" content="Confidential online therapy sessions for anxiety, stress, and relationships. Available worldwide.">
+<meta property="og:description" content="Confidential online therapy sessions available worldwide.">
 <meta property="og:type" content="website">
-
-<!-- International Targeting -->
-
-<meta name="geo.region" content="IN">
-<meta name="geo.placename" content="India">
-<meta name="language" content="English">
 
 <!-- Fonts -->
 
@@ -33,82 +27,119 @@
 <style>
 body {
   margin:0;
-  font-family: 'Inter', sans-serif;
-  background:#f8fbff;
+  font-family:'Inter', sans-serif;
+  background: linear-gradient(180deg,#f8fbff,#eef6ff);
   color:#333;
+  scroll-behavior:smooth;
 }
 
+/* HERO */
 header {
-  padding:80px 20px;
-  background: linear-gradient(135deg, #e3f2fd, #f8fbff);
+  padding:100px 20px;
+  background: linear-gradient(135deg,#e3f2fd,#ffffff);
   text-align:center;
+  animation: fadeIn 1.2s ease-in-out;
 }
 
 h1 {
-  font-family: 'Playfair Display', serif;
-  font-size:38px;
-  margin-bottom:10px;
+  font-family:'Playfair Display', serif;
+  font-size:42px;
 }
 
 h2 {
-  font-family: 'Playfair Display', serif;
+  font-family:'Playfair Display', serif;
 }
 
 p {
   max-width:650px;
   margin:10px auto;
-  line-height:1.6;
+  line-height:1.7;
 }
 
+/* BUTTON */
 .btn {
-  background: linear-gradient(45deg, #2196f3, #21cbf3);
+  background: linear-gradient(45deg,#2196f3,#21cbf3);
   color:white;
-  padding:12px 25px;
-  text-decoration:none;
+  padding:14px 30px;
   border-radius:30px;
+  text-decoration:none;
   display:inline-block;
   margin-top:20px;
   font-weight:600;
+  transition:0.3s;
 }
 
+.btn:hover {
+  transform:translateY(-3px);
+  box-shadow:0 8px 20px rgba(33,203,243,0.4);
+}
+
+/* SECTIONS */
 .section {
-  padding:60px 20px;
+  padding:80px 20px;
   text-align:center;
 }
 
+/* CARDS */
 .card {
-  background:white;
+  background: rgba(255,255,255,0.7);
+  backdrop-filter: blur(10px);
   padding:25px;
   margin:15px;
-  border-radius:15px;
-  box-shadow:0 5px 15px rgba(0,0,0,0.05);
+  border-radius:20px;
+  box-shadow:0 10px 25px rgba(0,0,0,0.08);
   display:inline-block;
   max-width:300px;
+  transition:0.3s;
 }
 
-img.profile {
-  width:140px;
+.card:hover {
+  transform:translateY(-10px) scale(1.02);
+}
+
+/* PROFILE */
+.profile {
+  width:150px;
   border-radius:50%;
   margin:20px 0;
+  transition:0.4s;
 }
 
+.profile:hover {
+  transform:scale(1.05);
+}
+
+/* FOOTER */
 .footer {
-  padding:20px;
+  padding:25px;
   background:#e3f2fd;
-  margin-top:40px;
   text-align:center;
 }
 
+/* WHATSAPP */
 .whatsapp {
   position:fixed;
   bottom:20px;
   right:20px;
   background:#25D366;
   color:white;
-  padding:12px 18px;
+  padding:14px 20px;
   border-radius:50px;
   text-decoration:none;
-  font-size:14px;
+  box-shadow:0 5px 15px rgba(0,0,0,0.2);
+  animation: float 2s infinite;
+}
+
+/* ANIMATIONS */
+@keyframes fadeIn {
+  from {opacity:0; transform:translateY(-20px);}
+  to {opacity:1; transform:translateY(0);}
+}
+
+@keyframes float {
+  0% {transform:translateY(0);}
+  50% {transform:translateY(-6px);}
+  100% {transform:translateY(0);}
 }
 </style>
 
@@ -120,10 +151,11 @@ img.profile {
   <h1>Online Therapy for Anxiety, Stress & Relationships</h1>
 
   <p>
-    Get professional online counseling from a certified psychotherapist. Helping individuals worldwide overcome anxiety, depression, and life challenges in a safe and confidential environment.
+    Get professional online counseling from a certified psychotherapist. Helping individuals worldwide overcome anxiety, depression, and life challenges.
   </p>
 
   <p>✔ Confidential | ✔ Online Sessions | ✔ Available Worldwide</p>
+  <p>⭐ Trusted by clients worldwide | 100% Confidential</p>
 
   <a href="https://calendly.com/yourname/session" target="_blank" class="btn">
     Book a Session
@@ -132,11 +164,10 @@ img.profile {
 
 <section class="section">
   <h2>About Me</h2>
-
-  <img src="profile.jpg" class="profile" alt="Therapist Photo">
+  <img src="profile.jpg" class="profile">
 
   <p>
-    I am a professional psychotherapist dedicated to helping individuals navigate life’s challenges with clarity and confidence. My approach is empathetic, evidence-based, and tailored to each individual.
+    I am a dedicated psychotherapist helping individuals navigate life’s challenges with clarity and confidence through personalized therapy sessions.
   </p>
 </section>
 
@@ -145,65 +176,88 @@ img.profile {
 
   <div class="card">
     <h3>Anxiety Therapy</h3>
-    <p>Manage stress, overthinking, and regain emotional balance.</p>
+    <p>Reduce stress, panic, and overthinking.</p>
   </div>
 
   <div class="card">
     <h3>Depression Counseling</h3>
-    <p>Get support and guidance through difficult emotional phases.</p>
+    <p>Support through emotional challenges.</p>
   </div>
 
   <div class="card">
-    <h3>Relationship Counseling</h3>
-    <p>Improve communication and build stronger connections.</p>
+    <h3>Relationship Therapy</h3>
+    <p>Improve communication and connection.</p>
   </div>
+
 </section>
 
 <section class="section">
-  <h2>What Clients Say</h2>
+  <h2>Testimonials</h2>
 
   <div class="card">
-    <p>"I felt truly heard and supported. My anxiety improved a lot."</p>
+    <p>"I felt truly heard and supported."</p>
     <strong>- Client A</strong>
   </div>
 
   <div class="card">
-    <p>"Very professional and understanding approach."</p>
+    <p>"Very professional and understanding."</p>
     <strong>- Client B</strong>
   </div>
+
 </section>
 
 <section class="section">
-  <h2>Frequently Asked Questions</h2>
+  <h2>FAQs</h2>
 
   <div class="card">
     <h3>Is online therapy effective?</h3>
-    <p>Yes, online therapy is highly effective for anxiety, stress, and relationship issues.</p>
+    <p>Yes, it is highly effective for most mental health concerns.</p>
   </div>
 
   <div class="card">
-    <h3>Are sessions confidential?</h3>
-    <p>All sessions are completely confidential and secure.</p>
+    <h3>Is it confidential?</h3>
+    <p>All sessions are fully private and secure.</p>
   </div>
 
   <div class="card">
-    <h3>Do you work with international clients?</h3>
-    <p>Yes, I offer therapy sessions worldwide via Zoom or Google Meet.</p>
+    <h3>Do you work internationally?</h3>
+    <p>Yes, sessions are available worldwide.</p>
   </div>
+
 </section>
 
 <section class="section">
   <h2>Contact</h2>
-  <p>Email: simransuryawanshi0@email.com</p>
+  <p>Email: your@email.com</p>
 </section>
 
-<a href="https://wa.me/919309145700" class="whatsapp">
+<a href="https://wa.me/919876543210" class="whatsapp">
   Chat on WhatsApp
 </a>
 
 <div class="footer">
-  <p>© 2026 Your Name | Online Psychotherapist</p>
+  <p>Simran Surve | Online Psychotherapist</p>
 </div>
+
+<script>
+const sections = document.querySelectorAll(".section");
+
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if(entry.isIntersecting){
+      entry.target.style.opacity = 1;
+      entry.target.style.transform = "translateY(0)";
+    }
+  });
+});
+
+sections.forEach(section => {
+  section.style.opacity = 0;
+  section.style.transform = "translateY(50px)";
+  section.style.transition = "all 0.8s ease";
+  observer.observe(section);
+});
+</script>
 
 </body>
 </html>
