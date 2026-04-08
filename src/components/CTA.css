@@ -1,0 +1,16 @@
+.cta {
+  text-align: center;
+}
+
+.cta__text {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  color: var(--accent);
+  line-height: 1.8;
+}
+
+@media (max-width: 768px) {
+  .cta__text {
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,36 @@
+/* WHATSAPP */
+.whatsapp {
+  position: fixed;
+  bottom: 2.5rem;
+  right: 2.5rem;
+  background: linear-gradient(135deg, #25D366, #1da85f);
+  color: var(--white);
+  padding: 1rem 1.8rem;
+  border-radius: 50px;
+  text-decoration: none;
+  box-shadow: 0 10px 30px rgba(37, 211, 102, 0.4);
+  font-weight: 700;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 50;
+  font-size: 0.93rem;
+  border: 1.5px solid rgba(255, 255, 255, 0.25);
+  letter-spacing: 0.3px;
+}
+
+.whatsapp:hover {
+  transform: scale(1.15) translateY(-5px);
+  box-shadow: 0 15px 45px rgba(37, 211, 102, 0.5);
+}
+
+.whatsapp:active {
+  transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+  .whatsapp {
+    bottom: 1.5rem;
+    right: 1.5rem;
+    padding: 0.85rem 1.4rem;
+    font-size: 0.85rem;
+  }
+}
