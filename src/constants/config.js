@@ -1,8 +1,8 @@
 export const CONTACT_INFO = {
-  email: 'simran@example.com',
-  phone: '+91 9876 543210',
-  whatsapp: '919876543210',
-  calendly: 'https://calendly.com/yourname/session'
+  email: 'simransurve15@gmail.com',
+  calendly: 'https://calendly.com/simransurve15/book_session',
+  linkedin: 'https://www.linkedin.com/in/simran-surve-5a95301a5/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B%2FqxP5qspSFyeQZ01%2BwNkxA%3D%3D',
+  instagram: 'https://www.instagram.com/simransurve15'
 }
 
 export const THERAPIST_INFO = {
@@ -53,27 +53,6 @@ export const SERVICES = [
     id: 6,
     title: 'Trauma-Informed Therapy',
     description: 'Safe, supportive space for processing past experiences. Healing-focused approach using evidence-based trauma therapies.'
-  }
-]
-
-export const TESTIMONIALS = [
-  {
-    id: 1,
-    message: 'Simran has genuinely transformed how I approach my anxiety. I feel equipped with real tools and never judged. Highly recommend.',
-    author: '— Sarah M.',
-    role: 'Anxiety & Stress Management'
-  },
-  {
-    id: 2,
-    message: 'Professional, empathetic, and truly listens. My sessions have given me clarity during a difficult time. Worth every moment.',
-    author: '— James K.',
-    role: 'Life Transitions'
-  },
-  {
-    id: 3,
-    message: 'I appreciated the non-judgmental space and practical strategies. My relationship with myself has improved significantly.',
-    author: '— Maria L.',
-    role: 'Self-Esteem & Confidence'
   }
 ]
 

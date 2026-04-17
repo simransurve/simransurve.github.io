@@ -1,24 +1,78 @@
-import './Hero.css'
-import { CONTACT_INFO } from '../constants/config'
+import "./Hero.css";
+import { CONTACT_INFO } from "../constants/config";
 
 function Hero() {
   return (
-    <header className="hero">
-      <h1 className="hero__title">Professional Online Therapy for Meaningful Change</h1>
-      <p className="hero__tagline">
-        Compassionate, evidence-based psychotherapy for anxiety, depression, relationships, and personal growth. Certified and experienced in helping clients worldwide.
-      </p>
-      <p className="hero__credentials">Licensed Psychotherapist • MSc Clinical Psychology • 8+ Years Experience</p>
-      <div className="hero__features">
-        <span>✓ Confidential & Secure</span>
-        <span>✓ Flexible Scheduling</span>
-        <span>✓ Global Clients</span>
+    <section id="home" className="hero">
+      {/* Background Aurora / Abstract Shapes */}
+      <div className="hero-background">
+        <div className="shape shape-1"></div>
+        <div className="shape shape-2"></div>
+        <div className="shape shape-3"></div>
       </div>
-      <a href={CONTACT_INFO.calendly} target="_blank" rel="noopener noreferrer" className="btn">
-        Schedule Your Session
-      </a>
-    </header>
-  )
+
+      <div className="hero-content">
+        {/* Badge */}
+        <div className="hero-badge">
+          <span className="badge-icon">🌿</span>
+          <span className="badge-text">Confidential &bull; Evidence-Based Care</span>
+        </div>
+
+        {/* Title */}
+        <h1 className="hero-title">
+          Take the First Step Toward <br />
+          <span className="highlight-text">Better Mental Health 🧠</span>
+        </h1>
+
+        {/* Subtitle */}
+        <p className="hero-subtitle">
+          Life can feel overwhelming — and that's okay. In therapy, you'll work
+          with a qualified psychologist in a safe, non-judgmental space 🛋️ to
+          build emotional resilience 🌱 and create lasting change at your own pace.
+        </p>
+
+        {/* 3D Floating Tags */}
+        <div className="hero-tags">
+          <div className="tag tag-1"><span>🌪️ Anxiety &amp; Stress</span></div>
+          <div className="tag tag-2"><span>🤯 Overthinking &amp; Burnout</span></div>
+          <div className="tag tag-3"><span>🤝 Relationship Challenges</span></div>
+        </div>
+
+        {/* CTA */}
+        <div className="hero-cta-group">
+          <a
+            href={CONTACT_INFO.calendly}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn hero-btn"
+          >
+            Book a Consultation 🗓️
+          </a>
+          <div className="hero-reassurance">
+            ✨ Seeking help is a sign of strength
+          </div>
+        </div>
+
+        {/* Trust Indicators */}
+        <div className="hero-trust">
+          <div className="trust-item">
+            <span className="trust-icon">⚕️</span>
+            <p>Clinical Psychotherapist</p>
+          </div>
+          <span className="dot">&bull;</span>
+          <div className="trust-item">
+            <span className="trust-icon">⏳</span>
+            <p>8+ Years Experience</p>
+          </div>
+          <span className="dot">&bull;</span>
+          <div className="trust-item">
+            <span className="trust-icon">🔒</span>
+            <p>Secure Online Sessions</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
 }
 
-export default Hero
+export default Hero;

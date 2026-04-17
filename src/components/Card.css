@@ -13,6 +13,22 @@
   overflow: hidden;
 }
 
+@media (max-width: 768px) {
+  .card {
+    padding: 1.8rem;
+  }
+
+  .card__title {
+    font-size: 1.2rem;
+    margin-bottom: 0.9rem;
+  }
+
+  .card__description {
+    font-size: 0.9rem;
+    line-height: 1.75;
+  }
+}
+
 .card::before {
   content: '';
   position: absolute;

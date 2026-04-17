@@ -3,14 +3,14 @@
   "version": "1.0.0",
   "description": "Professional psychotherapist website built with React",
   "type": "module",
-  "homepage": "https://github.com/simransurve/simransurve.github.io",
+  "homepage": "https://simransurve.github.io/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
     "lint": "eslint src --ext js,jsx",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist --repo https://github.com/simransurve/simransurve.github.io.git"
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "react": "^18.2.0",

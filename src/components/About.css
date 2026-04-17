@@ -1,79 +1,300 @@
-/* ABOUT SECTION */
-.about__content {
+/* SECTION */
+.about {
+  padding: 2rem 1.5rem;
+}
+
+/* WRAPPER */
+.about__wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* HEADER */
+.about__header {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.about__title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #0f172a;
+  background: linear-gradient(135deg, #2563eb 0%, #1e40af 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* CARDS GRID */
+.about__cards-grid {
   display: grid;
-  grid-template-columns: 1fr 1.1fr;
-  gap: 4.5rem;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.2rem;
+}
+
+/* CARD BASE */
+.about__card {
+  background: white;
+  border-radius: 12px;
+  padding: 1.2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  border: 1px solid #e2e8f0;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.about__card:hover {
+  box-shadow: 0 8px 20px rgba(37, 99, 235, 0.1);
+  border-color: #2563eb;
+  transform: translateY(-4px);
+}
+
+.about__card-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #0f172a;
+  margin-bottom: 0.8rem;
+}
+
+/* PROFILE CARD */
+.about__card--profile {
+  justify-content: center;
   align-items: center;
+  text-align: center;
+}
+
+.about__image-wrapper {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 0.8rem;
 }
 
 .about__profile {
-  width: 260px;
-  height: 260px;
-  border-radius: 16px;
-  margin: 0 auto;
+  width: 160px;
+  height: 200px;
+  border-radius: 10px;
   object-fit: cover;
-  box-shadow: 0 25px 60px rgba(26, 58, 82, 0.18);
-  border: 2px solid rgba(37, 99, 235, 0.15);
-  transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 10px 30px rgba(37, 99, 235, 0.15);
+  border: 2px solid rgba(37, 99, 235, 0.1);
+  transition: all 0.3s ease;
 }
 
 .about__profile:hover {
-  box-shadow: 0 30px 80px rgba(37, 99, 235, 0.25);
-  border-color: rgba(37, 99, 235, 0.3);
-  transform: translateY(-8px);
+  transform: scale(1.03);
+  box-shadow: 0 15px 40px rgba(37, 99, 235, 0.2);
 }
 
-.about__text p {
-  font-size: 1.08rem;
-  margin-bottom: 2rem;
-  color: var(--accent);
-  line-height: 1.95;
-  font-weight: 400;
-  letter-spacing: 0.3px;
+.about__badge {
+  position: absolute;
+  bottom: 8px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: linear-gradient(135deg, #2563eb, #1e40af);
+  color: white;
+  padding: 0.4rem 0.8rem;
+  border-radius: 14px;
+  font-size: 0.65rem;
+  font-weight: 600;
+  box-shadow: 0 6px 16px rgba(37, 99, 235, 0.2);
+  white-space: nowrap;
 }
 
-.about__list {
-  list-style: none;
-  margin-left: 0;
-  margin-top: 2rem;
+.about__card--profile .about__card-title {
+  margin-bottom: 0.2rem;
+}
+
+.about__card-subtitle {
+  font-size: 0.85rem;
+  color: #64748b;
+  font-weight: 500;
+  margin-bottom: 0.8rem;
+}
+
+.about__card-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.6rem;
+  width: 100%;
+}
+
+.about__mini-stat {
+  background: #f8fafc;
+  padding: 0.6rem;
+  border-radius: 8px;
+  text-align: center;
+  border: 1px solid #e2e8f0;
+}
+
+.about__mini-stat-number {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #2563eb;
+  line-height: 1;
+}
+
+.about__mini-stat-label {
+  font-size: 0.65rem;
+  color: #64748b;
+  font-weight: 500;
+  margin-top: 0.3rem;
+}
+
+/* ABOUT CARD */
+.about__card--about p {
+  font-size: 0.9rem;
+  color: #475569;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* EXPERTISE CARD */
+.about__expertise-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.6rem;
+}
+
+.about__expertise-item {
+  background: #f8fafc;
+  padding: 0.7rem;
+  border-radius: 8px;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  gap: 0.4rem;
+  border: 1px solid #e2e8f0;
+  transition: all 0.3s ease;
+}
+
+.about__expertise-item:hover {
+  background: #f0f9ff;
+  border-color: #2563eb;
+}
+
+.about__expertise-icon {
+  font-size: 1.4rem;
+  line-height: 1;
+}
+
+.about__expertise-label {
+  font-size: 0.8rem;
+  color: #334155;
+  font-weight: 500;
+  text-align: center;
+  line-height: 1.2;
+}
+
+/* CREDENTIALS CARD */
+.about__card--credentials {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   gap: 1rem;
 }
 
-.about__list li {
-  padding: 0.9rem 0;
-  color: var(--primary);
-  padding-left: 2.2rem;
-  position: relative;
-  font-weight: 600;
+.about__credentials-section,
+.about__approaches-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.about__credentials-section .about__card-title,
+.about__approaches-section .about__card-title {
   font-size: 0.95rem;
-  letter-spacing: 0.2px;
-  transition: transform 0.3s ease, color 0.3s ease;
+  margin-bottom: 0.6rem;
 }
 
-.about__list li:hover {
-  transform: translateX(8px);
-  color: var(--primary-light);
+.about__credentials-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
 }
 
-.about__list li:before {
-  content: "✓";
+.about__credentials-list li {
+  font-size: 0.85rem;
+  color: #475569;
+  padding-left: 1.2rem;
+  position: relative;
+  line-height: 1.4;
+}
+
+.about__credentials-list li::before {
+  content: '✓';
   position: absolute;
   left: 0;
-  color: var(--primary-light);
-  font-weight: 700;
-  font-size: 1.3rem;
+  color: #2563eb;
+  font-weight: 600;
 }
 
+.about__approaches-title {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #0f172a;
+  margin-bottom: 0.6rem;
+}
+
+.about__approaches-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.about__approach-tag {
+  background: #f0f9ff;
+  color: #2563eb;
+  padding: 0.35rem 0.7rem;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  text-align: center;
+  border: 1px solid #bfdbfe;
+  transition: all 0.3s ease;
+}
+
+.about__approach-tag:hover {
+  background: #2563eb;
+  color: white;
+  border-color: #2563eb;
+}
+
+/* MOBILE */
 @media (max-width: 768px) {
-  .about__content {
+  .about {
+    padding: 1.5rem 1.5rem;
+  }
+
+  .about__title {
+    font-size: 1.6rem;
+  }
+
+  .about__cards-grid {
     grid-template-columns: 1fr;
-    gap: 2.5rem;
+    gap: 1rem;
+  }
+
+  .about__card {
+    padding: 1rem;
+  }
+
+  .about__card-title {
+    font-size: 1rem;
+    margin-bottom: 0.6rem;
   }
 
   .about__profile {
-    width: 200px;
-    height: 200px;
+    width: 140px;
+    height: 180px;
+  }
+
+  .about__card--credentials {
+    grid-template-columns: 1fr;
+    gap: 0.8rem;
+  }
+
+  .about__expertise-grid {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
