@@ -5,18 +5,12 @@
   padding: 6rem 2rem 3rem;
   width: 100%;
   margin: 0;
-  background: linear-gradient(
-    135deg,
-    #dbeafe 0%,
-    #93c5fd 25%,
-    #86efac 65%,
-    #fde68a 100%
-  );
+  background-color: #f8fafc;
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
-  border-top: 2px solid rgba(255, 255, 255, 0.3);
+  border-top: 2px solid rgba(15, 23, 42, 0.08);
 }
 
 /* Background Decoration */
@@ -26,10 +20,10 @@
   left: 0;
   right: 0;
   bottom: 0;
-  opacity: 0;
+  opacity: 0.6;
   background: 
-    radial-gradient(circle at 20% 50%, #6495ed, transparent 50%),
-    radial-gradient(circle at 80% 80%, #98d8c8, transparent 50%);
+    radial-gradient(circle at 20% 50%, #93c5fd, transparent 50%),
+    radial-gradient(circle at 80% 80%, #c4b5fd, transparent 50%);
   pointer-events: none;
   z-index: 0;
 }

@@ -22,8 +22,15 @@ function About() {
     'Mindfulness'
   ]
 
-  return (
-    <section className="about section" id="about">
+return (
+    <section className="about" id="about">
+      {/* Background Aurora / Abstract Shapes */}
+      <div className="about-background">
+        <div className="shape shape-1"></div>
+        <div className="shape shape-2"></div>
+        <div className="shape shape-3"></div>
+      </div>
+
       <div className="about__wrapper">
         <div className="about__header">
           <h2 className="about__title">About Me</h2>
