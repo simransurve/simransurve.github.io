@@ -8,7 +8,9 @@ function Footer() {
       <div className="footer__content">
         <div className="footer__top">
           <div className="footer__section footer__section--contact">
-            <div className="footer__icon">✉️</div>
+            <div className="footer__icon-wrap footer__icon-wrap--contact">
+              <span className="footer__icon">✉️</span>
+            </div>
             <h4>Get In Touch</h4>
             <a href={`mailto:${CONTACT_INFO.email}`} className="footer__link">
               {CONTACT_INFO.email}
@@ -17,7 +19,9 @@ function Footer() {
           </div>
 
           <div className="footer__section footer__section--availability">
-            <div className="footer__icon">🕒</div>
+            <div className="footer__icon-wrap footer__icon-wrap--availability">
+              <span className="footer__icon">🕒</span>
+            </div>
             <h4>Availability</h4>
             <p className="footer__availability-text">
               <strong>Mon - Fri:</strong> {AVAILABILITY.weekdays}
@@ -27,7 +31,9 @@ function Footer() {
           </div>
 
           <div className="footer__section footer__section--social">
-            <div className="footer__icon">🤝</div>
+            <div className="footer__icon-wrap footer__icon-wrap--social">
+              <span className="footer__icon">🤝</span>
+            </div>
             <h4>Connect</h4>
             <div className="social-links">
               <a
@@ -123,3 +129,4 @@ function Footer() {
 }
 
 export default Footer;
+

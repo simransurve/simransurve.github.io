@@ -1,7 +1,7 @@
 import { useEffect, useRef } from 'react'
 import './Card.css'
 
-function Card({ title, description, type = 'default', author, role }) {
+function Card({ title, description, emoji, tag, type = 'default', author, role }) {
   const cardRef = useRef(null)
 
   useEffect(() => {
@@ -30,9 +30,12 @@ function Card({ title, description, type = 'default', author, role }) {
 
   return (
     <div ref={cardRef} className={`card card--${type}`}>
+      {emoji && <div className="card__emoji">{emoji}</div>}
+      {tag && <span className="card__tag">{tag}</span>}
       <h3 className="card__title">{title}</h3>
       {type === 'testimonial' ? (
         <>
+          <div className="card__quote-mark">"</div>
           <p className="card__description"><em>{description}</em></p>
           <div className="card__author">{author}</div>
           <div className="card__role">{role}</div>
@@ -45,3 +48,4 @@ function Card({ title, description, type = 'default', author, role }) {
 }
 
 export default Card
+

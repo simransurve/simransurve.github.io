@@ -13,13 +13,24 @@ function Services() {
       </div>
 
       <div className="services__wrapper">
-        <h2>Therapy Services</h2>
+        <div className="services__header">
+          <div className="services__label">What We Offer</div>
+          <h2 className="services__title">
+            Our <span>Services</span>
+          </h2>
+          <p className="services__subtitle">
+            Comprehensive mental health and wellness solutions tailored to your unique journey. From therapy to corporate wellness, we are here for you.
+          </p>
+        </div>
+
         <div className="services__container">
           {SERVICES.map((service) => (
-            <Card 
-              key={service.id} 
-              title={service.title} 
-              description={service.description} 
+            <Card
+              key={service.id}
+              emoji={service.emoji}
+              title={service.title}
+              description={service.description}
+              tag={service.tag}
             />
           ))}
         </div>
@@ -29,3 +40,4 @@ function Services() {
 }
 
 export default Services
+

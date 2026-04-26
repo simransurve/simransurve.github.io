@@ -15,7 +15,9 @@ function Hero() {
         {/* Badge */}
         <div className="hero-badge">
           <span className="badge-icon">🌿</span>
-          <span className="badge-text">Confidential &bull; Evidence-Based Care</span>
+          <span className="badge-text">
+            Confidential &bull; Evidence-Based Care
+          </span>
         </div>
 
         {/* Title */}
@@ -28,46 +30,70 @@ function Hero() {
         <p className="hero-subtitle">
           Life can feel overwhelming — and that's okay. In therapy, you'll work
           with a qualified psychologist in a safe, non-judgmental space 🛋️ to
-          build emotional resilience 🌱 and create lasting change at your own pace.
+          build emotional resilience 🌱 and create lasting change at your own
+          pace.
         </p>
 
         {/* 3D Floating Tags */}
-        <div className="hero-tags">
-          <div className="tag tag-1"><span>🌪️ Anxiety &amp; Stress</span></div>
-          <div className="tag tag-2"><span>🤯 Overthinking &amp; Burnout</span></div>
-          <div className="tag tag-3"><span>🤝 Relationship Challenges</span></div>
+        <div class="hero-tags">
+          <div class="orb-tag ot1">
+            <div class="dot-orbit"></div>
+            <div class="orb-tag-inner">
+              <span class="emoji-big">🌪️</span>
+              <span>Anxiety &amp; Stress</span>
+            </div>
+          </div>
+
+          <div class="orb-tag ot2">
+            <div class="dot-orbit"></div>
+            <div class="orb-tag-inner">
+              <span class="emoji-big">🤯</span>
+              <span>Overthinking &amp; Burnout</span>
+            </div>
+          </div>
+
+          <div class="orb-tag ot3">
+            <div class="dot-orbit"></div>
+            <div class="orb-tag-inner">
+              <span class="emoji-big">🤝</span>
+              <span>Relationship Challenges</span>
+            </div>
+          </div>
         </div>
 
         {/* CTA */}
-        <div className="hero-cta-group">
-          <a
-            href={CONTACT_INFO.calendly}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="btn hero-btn"
-          >
-            Book a Consultation 🗓️
-          </a>
-          <div className="hero-reassurance">
-            ✨ Seeking help is a sign of strength
-          </div>
-        </div>
+        <div class="hero-cta-group">
+          <div class="bento-cta">
+            <a
+              href={CONTACT_INFO.calendly}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bento-main"
+            >
+              <div class="bento-icon-box">🗓️</div>
+              <div class="bento-text-group">
+                <div class="bento-title">Book a Session</div>
+                <div class="bento-sub">Schedule in 60 seconds</div>
+              </div>
+              <div class="bento-arrow">↗</div>
+            </a>
 
-        {/* Trust Indicators */}
-        <div className="hero-trust">
-          <div className="trust-item">
-            <span className="trust-icon">⚕️</span>
-            <p>Clinical Psychotherapist</p>
+            <div class="bento-side">
+              <div class="bento-chip chip-available">
+                <span class="chip-dot cd-green"></span>
+                Available today
+              </div>
+              <div class="bento-chip chip-private">
+                <span class="chip-dot cd-blue"></span>
+                Confidential
+              </div>
+            </div>
           </div>
-          <span className="dot">&bull;</span>
-          <div className="trust-item">
-            <span className="trust-icon">⏳</span>
-            <p>8+ Years Experience</p>
-          </div>
-          <span className="dot">&bull;</span>
-          <div className="trust-item">
-            <span className="trust-icon">🔒</span>
-            <p>Secure Online Sessions</p>
+
+          <div class="hero-reassurance">
+            <span class="reassurance-dot"></span>
+            <span>Seeking help is a sign of strength</span>
+            <span class="reassurance-sparkle">✨</span>
           </div>
         </div>
       </div>
