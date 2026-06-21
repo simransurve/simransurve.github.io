@@ -23,9 +23,7 @@ simran-react/
 │   │   ├── About.jsx
 │   │   ├── Services.jsx
 │   │   ├── Testimonials.jsx
-│   │   ├── FAQ.jsx
 │   │   ├── CTA.jsx
-│   │   ├── WhatsAppButton.jsx
 │   │   ├── Footer.jsx
 │   │   ├── Card.jsx
 │   │   └── [Component].css files
@@ -92,7 +90,6 @@ Edit the contact details in `src/components/Footer.jsx`:
 All content is easily customizable in respective component files:
 - Services: `src/components/Services.jsx`
 - Testimonials: `src/components/Testimonials.jsx`
-- FAQ: `src/components/FAQ.jsx`
 
 ### Modify Colors
 

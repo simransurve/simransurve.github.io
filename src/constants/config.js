@@ -133,41 +133,8 @@ export const SERVICES = [
   },
 ]
 
-export const FAQS = [
-  {
-    id: 1,
-    title: 'Is online therapy as effective as face-to-face?',
-    description: 'Yes. Research shows online therapy is equally effective as in-person therapy. The key is the therapeutic relationship and your commitment to the process.'
-  },
-  {
-    id: 2,
-    title: 'How long are sessions?',
-    description: 'Standard therapy sessions are 50 minutes, with a 10-minute buffer between appointments. We can discuss customized arrangements during consultation.'
-  },
-  {
-    id: 3,
-    title: 'Is my privacy protected?',
-    description: 'Absolutely. All sessions are conducted on secure, encrypted platforms. Full confidentiality is maintained in line with professional ethical standards and legal requirements.'
-  },
-  {
-    id: 4,
-    title: 'How often should I attend?',
-    description: 'This depends on your needs and goals. Most clients start with weekly sessions and can adjust frequency as they progress. We\'ll work together to find the right schedule.'
-  },
-  {
-    id: 5,
-    title: 'What if I\'m nervous about therapy?',
-    description: 'That\'s completely normal. Your first session is a consultation where we\'ll discuss your concerns, my approach, and whether we\'re a good fit. There\'s no pressure.'
-  },
-  {
-    id: 6,
-    title: 'How do I book a session?',
-    description: 'Click the "Schedule Your Session" button or contact me directly via email. I\'ll send you available times and details about how to join your first session.'
-  }
-]
-
 export const AVAILABILITY = {
-  weekdays: '9 AM - 6 PM (IST)',
+  weekdays: '10 AM - 6 PM (IST)',
   weekends: 'Available by request'
 }
 
