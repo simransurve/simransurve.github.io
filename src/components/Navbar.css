@@ -1,9 +1,9 @@
 /* ================= NAVBAR ================= */
 .navbar {
-  position: fixed;        /* ← change from sticky */
+  position: fixed;
   top: 0;
   left: 0;
-  right: 0;               /* ← add this */
+  right: 0;
   z-index: 1000;
 
   display: flex;
@@ -11,13 +11,25 @@
   align-items: center;
 
   padding: 0.75rem 2rem;
-  background: linear-gradient(180deg, #0f172a 0%, #111827 100%);
+  background: linear-gradient(180deg, rgba(15, 23, 42, 0.95) 0%, rgba(17, 24, 39, 0.95) 100%);
   border-bottom: 1px solid rgba(255, 255, 255, 0.05);
   box-shadow:
     0 1px 0 rgba(255, 255, 255, 0.04),
     0 10px 25px rgba(0, 0, 0, 0.35);
   backdrop-filter: blur(10px);
-  transition: background 0.25s ease, box-shadow 0.25s ease;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  animation: navbarSlideDown 0.6s ease-out;
+}
+
+@keyframes navbarSlideDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /* ================= LOGO ================= */
@@ -31,11 +43,28 @@
   letter-spacing: -0.4px;
   cursor: pointer;
 
-  transition: opacity 0.2s ease;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.navbar__logo::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #3b82f6, #8b5cf6);
+  transition: width 0.4s ease;
 }
 
 .navbar__logo:hover {
-  opacity: 0.85;
+  color: #f0f4f8;
+  text-shadow: 0 0 20px rgba(59, 130, 246, 0.3);
+}
+
+.navbar__logo:hover::after {
+  width: 100%;
 }
 
 /* ================= LINKS CONTAINER ================= */
@@ -55,9 +84,9 @@
 
   color: #9ca3af;
 
-  padding: 0.25rem 0;
-
-  transition: color 0.2s ease;
+  padding: 0.5rem 0.8rem;
+  border-radius: 6px;
+  transition: all 0.3s ease;
 }
 
 /* 🔹 Underline Animation */
@@ -68,16 +97,18 @@
   bottom: -4px;
 
   width: 0%;
-  height: 1.5px;
+  height: 2px;
 
-  background: #3b82f6; /* accent blue */
+  background: linear-gradient(90deg, #3b82f6, #8b5cf6);
 
-  transition: width 0.25s ease;
+  transition: width 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
 }
 
 /* ================= HOVER ================= */
 .navbar__link:hover {
   color: #e5e7eb;
+  background: rgba(59, 130, 246, 0.08);
+  transform: translateY(-2px);
 }
 
 .navbar__link:hover::after {
@@ -87,6 +118,7 @@
 /* ================= ACTIVE ================= */
 .navbar__link.active {
   color: #ffffff;
+  background: rgba(59, 130, 246, 0.12);
 }
 
 .navbar__link.active::after {

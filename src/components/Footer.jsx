@@ -9,7 +9,7 @@ function Footer() {
         <div className="footer__top">
           <div className="footer__section footer__section--contact">
             <div className="footer__icon-wrap footer__icon-wrap--contact">
-              <span className="footer__icon">✉️</span>
+              <span className="footer__icon">📧</span>
             </div>
             <h4>Get In Touch</h4>
             <a href={`mailto:${CONTACT_INFO.email}`} className="footer__link">
@@ -24,10 +24,11 @@ function Footer() {
             </div>
             <h4>Availability</h4>
             <p className="footer__availability-text">
-              <strong>Mon - Fri:</strong> {AVAILABILITY.weekdays}
-              <br />
-              <strong>Weekends:</strong> {AVAILABILITY.weekends}
+              <strong>{AVAILABILITY.days}:</strong> {AVAILABILITY.hours}
             </p>
+            <a href={CONTACT_INFO.calendly} className="footer__link" target="_blank" rel="noopener noreferrer">
+              Book Your Session
+            </a>
           </div>
 
           <div className="footer__section footer__section--social">

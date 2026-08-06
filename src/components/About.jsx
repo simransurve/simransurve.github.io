@@ -1,13 +1,33 @@
 import './About.css'
 import NewProfileImage from '../assets/NewProfileImage.jpg'
+import { useEffect, useRef } from 'react'
 
 function About() {
 
-  const stats = [
-    { number: '8+', label: 'Years Experience' },
-    { number: '500+', label: 'Clients Helped' },
-    { number: '95%', label: 'Satisfaction Rate' }
-  ]
+  const statsRef = useRef(null)
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('animate-stats')
+          }
+        })
+      },
+      { threshold: 0.3 }
+    )
+
+    if (statsRef.current) {
+      observer.observe(statsRef.current)
+    }
+
+    return () => {
+      if (statsRef.current) {
+        observer.unobserve(statsRef.current)
+      }
+    }
+  }, [])
 
   return (
     <section className="about" id="about">
@@ -30,7 +50,8 @@ function About() {
           </p>
         </div>
 
-        {/* Main Featured Card */}
+        {/* Stats Section */}
+        
         <div className="about__featured">
           <div className="about__featured-image">
             <div className="about__image-ring">

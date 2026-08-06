@@ -91,19 +91,32 @@
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 2px;
-  padding: 0.5rem 1.2rem;
+  padding: 0.6rem 1.4rem;
   border-radius: 50px;
-  margin-bottom: 1.2rem;
+  margin-bottom: 1.5rem;
   box-shadow: 0 4px 15px rgba(37, 99, 235, 0.3);
+  animation: badgeSlideDown 0.8s ease-out;
 }
 
 .services__title {
-  font-size: 2.8rem;
+  font-size: 3rem;
   font-weight: 800;
   color: #0f172a;
-  margin-bottom: 0.8rem;
-  letter-spacing: -1px;
+  margin-bottom: 1rem;
+  letter-spacing: -1.2px;
   line-height: 1.1;
+  animation: titleSlideUp 0.8s cubic-bezier(0.34, 1.56, 0.64, 1) 0.1s backwards;
+}
+
+@keyframes titleSlideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .services__title span {
@@ -115,10 +128,13 @@
 
 .services__subtitle {
   font-size: 1.1rem;
-  color: #64748b;
-  max-width: 600px;
-  line-height: 1.7;
-  margin: 0 auto;
+  color: #475569;
+  max-width: 700px;
+  line-height: 1.8;
+  margin: 0 auto 3rem;
+  letter-spacing: 0.3px;
+  animation: subtitleFadeIn 0.8s ease-out 0.2s backwards;
+  font-weight: 500;
 }
 
 /* GRID */

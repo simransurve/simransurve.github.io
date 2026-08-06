@@ -1,5 +1,6 @@
 /* FONTS IMPORT */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Lora:wght@500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Lora:wght@500;600;700;800&display=swap');
+@import url('./styles/buttons.css');
 
 /* GLOBAL STYLES */
 :root {
@@ -14,6 +15,7 @@
   --shadow-sm: 0 1px 3px rgba(26, 58, 82, 0.08);
   --shadow-md: 0 4px 15px rgba(26, 58, 82, 0.06);
   --shadow-lg: 0 12px 35px rgba(37, 99, 235, 0.12);
+  --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 * {
@@ -49,9 +51,101 @@ body {
 .app {
   width: 100%;
   overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
 }
 
-/* BUTTON */
+/* COMMON ANIMATIONS */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* UTILITY CLASSES */
+.hidden {
+  display: none;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-muted {
+  color: #64748b;
+}
+
+.text-bold {
+  font-weight: 700;
+}
+
+.section-padding {
+  padding: 6rem 5% 4rem;
+}
+
+/* SCROLLBAR STYLING */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(135deg, #2563eb, #7c3aed);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(135deg, #1d4ed8, #6d28d9);
+}
+
+@import url('./styles/buttons.css');
 .btn {
   background: linear-gradient(135deg, var(--primary-light) 0%, var(--primary-dark) 100%);
   color: var(--white);

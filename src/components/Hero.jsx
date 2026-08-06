@@ -1,30 +1,52 @@
 import "./Hero.css";
 import { CONTACT_INFO } from "../constants/config";
+import { useEffect, useState } from "react";
 
 function Hero() {
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    setIsVisible(true);
+  }, []);
+
   return (
     <section id="home" className="hero">
+      {/* Animated Grid Background */}
+      <div className="hero-grid"></div>
+
       {/* Background Aurora / Abstract Shapes */}
       <div className="hero-background">
         <div className="shape shape-1"></div>
         <div className="shape shape-2"></div>
         <div className="shape shape-3"></div>
+        {/* Floating particles */}
+        <div className="particle p1"></div>
+        <div className="particle p2"></div>
+        <div className="particle p3"></div>
+        <div className="particle p4"></div>
       </div>
 
-      <div className="hero-content">
-        {/* Badge */}
+      <div className={`hero-content ${isVisible ? 'visible' : ''}`}>
+        {/* Premium Badge */}
         <div className="hero-badge">
+          <span className="badge-glow"></span>
           <span className="badge-icon">🌿</span>
           <span className="badge-text">
             Confidential &bull; Evidence-Based Care
           </span>
+          <span className="badge-shine"></span>
         </div>
 
-        {/* Title */}
-        <h1 className="hero-title">
-          Take the First Step Toward <br />
-          <span className="highlight-text">Better Mental Health 🧠</span>
-        </h1>
+        {/* Premium Title */}
+        <div className="hero-title-wrapper">
+          <h1 className="hero-title">
+            Take the First Step Toward <br />
+            <span className="highlight-text">
+              <span className="highlight-inner">Better Mental Health 🧠</span>
+            </span>
+          </h1>
+          <div className="title-underline"></div>
+        </div>
 
         {/* Subtitle */}
         <p className="hero-subtitle">
@@ -61,39 +83,40 @@ function Hero() {
           </div>
         </div>
 
-        {/* CTA */}
-        <div class="hero-cta-group">
+        {/* Enhanced CTA Group */}
+        <div className="hero-cta-group">
           <div class="bento-cta">
             <a
               href={CONTACT_INFO.calendly}
               target="_blank"
               rel="noopener noreferrer"
-              className="bento-main"
+              className="bento-main premium-cta"
             >
-              <div class="bento-icon-box">🗓️</div>
-              <div class="bento-text-group">
-                <div class="bento-title">Book a Session</div>
-                <div class="bento-sub">Schedule in 60 seconds</div>
+              <div className="bento-glow"></div>
+              <div className="bento-icon-box">🗓️</div>
+              <div className="bento-text-group">
+                <div className="bento-title">Book Your Session</div>
+                <div className="bento-sub">Get matched with a therapist</div>
               </div>
-              <div class="bento-arrow">↗</div>
+              <div className="bento-arrow">↗</div>
             </a>
 
-            <div class="bento-side">
-              <div class="bento-chip chip-available">
-                <span class="chip-dot cd-green"></span>
-                Available today
+            <div className="bento-side">
+              <div className="bento-chip chip-available">
+                <span className="chip-dot cd-green"></span>
+                <span className="chip-label">Available Today</span>
               </div>
-              <div class="bento-chip chip-private">
-                <span class="chip-dot cd-blue"></span>
-                Confidential
+              <div className="bento-chip chip-private">
+                <span className="chip-dot cd-blue"></span>
+                <span className="chip-label">100% Confidential</span>
               </div>
             </div>
           </div>
 
-          <div class="hero-reassurance">
-            <span class="reassurance-dot"></span>
-            <span>Seeking help is a sign of strength</span>
-            <span class="reassurance-sparkle">✨</span>
+          <div className="hero-reassurance premium-reassurance">
+            <span className="reassurance-dot"></span>
+            <span>💪 Seeking help is a sign of strength</span>
+            <span className="reassurance-sparkle">✨</span>
           </div>
         </div>
       </div>
