@@ -9,7 +9,7 @@ export const CONTACT_INFO = {
 export const THERAPIST_INFO = {
   name: "Simran Surve",
   title: "Licensed Psychotherapist & Counsellor",
-  credentials: "MSc Clinical Psychology • 8+ Years Experience",
+  credentials: "Clinical Psychology • 8+ Years Experience",
   bio: "Professional Online Therapy for Meaningful Change",
   features: [
     "✓ Confidential & Secure",
