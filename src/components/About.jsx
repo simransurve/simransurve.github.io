@@ -5,7 +5,9 @@ function About() {
     { icon: '🧠', title: 'Anxiety & Stress', desc: 'Evidence-based techniques for anxiety, panic, and chronic stress' },
     { icon: '💔', title: 'Depression & Grief', desc: 'Compassionate support for emotional challenges' },
     { icon: '🤝', title: 'Relationships', desc: 'Guidance for relationship and communication issues' },
-    { icon: '💼', title: 'Career & Growth', desc: 'Support for career transitions and personal development' }
+    { icon: '💼', title: 'Career & Growth', desc: 'Support for career transitions and personal development' },
+    { icon: '💪', title: 'Trauma & PTSD', desc: 'Specialized support for trauma recovery and healing from difficult experiences' },
+    { icon: '🧘', title: 'Mindfulness & Wellness', desc: 'Developing sustainable practices for emotional regulation and inner peace' }
   ]
 
   const sessionFormats = [
