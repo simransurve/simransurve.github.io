@@ -13,14 +13,6 @@ function About() {
     { icon: '🏢', title: 'In-Person Sessions', desc: 'Face-to-face therapy in a clinic' }
   ]
 
-  const credentials = [
-    'Clinical Psychology',
-    '8+ Years of Clinical Experience',
-    'Evidence-Based Therapies (CBT, DBT, Psychodynamic)',
-    'Psychometric Testing & Assessment',
-    'GDPR & HIPAA Compliant Practice'
-  ]
-
   return (
     <section className="about" id="about">
       {/* Background Aurora */}
@@ -45,17 +37,9 @@ function About() {
         {/* Featured Content - Professional Bio */}
         <div className="about__featured">
           <div className="about__featured-content">
-            <div className="about__credentials-badge">
-              <h3 className="about__role">Clinical Psychotherapist & Counsellor</h3>
-              <div className="credentials-list">
-                {credentials.map((cred, idx) => (
-                  <span key={idx} className="credential-item">✓ {cred}</span>
-                ))}
-              </div>
-            </div>
             
             <p className="about__bio">
-              I am a dedicated Clinical Psychotherapist with <span className="bio-highlight">8+ years of specialized experience</span> helping individuals navigate emotional challenges, build resilience, and create lasting change. My practice combines <span className="bio-highlight">evidence-based therapeutic techniques</span> with a deeply <span className="bio-highlight">compassionate, confidential, and non-judgmental approach</span>. Whether you're struggling with anxiety, relationships, career transitions, or personal growth, I'm here to support your journey.
+              I am a dedicated Clinical Psychotherapist with <span className="bio-highlight">professional experience</span> helping individuals navigate emotional challenges, build resilience, and create lasting change. My practice combines <span className="bio-highlight">evidence-based therapeutic techniques</span> with a deeply <span className="bio-highlight">compassionate, confidential, and non-judgmental approach</span>. Whether you're struggling with anxiety, relationships, career transitions, or personal growth, I'm here to support your journey.
             </p>
 
             {/* Expertise Grid */}
@@ -109,6 +93,16 @@ function About() {
                   <div className="approach-card__num">04</div>
                   <h4>Holistic Care</h4>
                   <p>Addressing emotional, mental, social, and physical wellbeing together</p>
+                </div>
+                <div className="approach-card">
+                  <div className="approach-card__num">05</div>
+                  <h4>Personalized & Adaptive</h4>
+                  <p>Therapy tailored to your unique needs, preferences, and individual pace of change</p>
+                </div>
+                <div className="approach-card">
+                  <div className="approach-card__num">06</div>
+                  <h4>Sustainable Growth</h4>
+                  <p>Building lasting resilience and meaningful change that extends far beyond our sessions</p>
                 </div>
               </div>
             </div>
