@@ -46,7 +46,7 @@ function About() {
         <div className="about__featured">
           <div className="about__featured-content">
             <div className="about__credentials-badge">
-              <h3 className="about__role">Licensed Clinical Psychotherapist & Counsellor</h3>
+              <h3 className="about__role">Clinical Psychotherapist & Counsellor</h3>
               <div className="credentials-list">
                 {credentials.map((cred, idx) => (
                   <span key={idx} className="credential-item">✓ {cred}</span>

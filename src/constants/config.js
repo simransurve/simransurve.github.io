@@ -1,5 +1,7 @@
 export const CONTACT_INFO = {
   email: "simransurve15@gmail.com",
+  phone: "+91 9309145700",
+  phoneRaw: "9309145700",
   calendly: "https://calendly.com/simransurve15/book_session",
   linkedin:
     "https://www.linkedin.com/in/simran-surve-5a95301a5/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B%2FqxP5qspSFyeQZ01%2BwNkxA%3D%3D",
@@ -8,7 +10,7 @@ export const CONTACT_INFO = {
 
 export const THERAPIST_INFO = {
   name: "Simran Surve",
-  title: "Licensed Psychotherapist & Counsellor",
+  title: "Psychotherapist & Counsellor",
   credentials: "Clinical Psychology • 8+ Years Experience",
   bio: "Professional Online Therapy for Meaningful Change",
   features: [

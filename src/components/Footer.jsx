@@ -18,6 +18,17 @@ function Footer() {
             <p className="footer__subtext">Reach out for consultations</p>
           </div>
 
+          <div className="footer__section footer__section--phone">
+            <div className="footer__icon-wrap footer__icon-wrap--phone">
+              <span className="footer__icon">📱</span>
+            </div>
+            <h4>Call Us</h4>
+            <a href={`tel:${CONTACT_INFO.phoneRaw}`} className="footer__link">
+              {CONTACT_INFO.phone}
+            </a>
+            <p className="footer__subtext">Available for appointments</p>
+          </div>
+
           <div className="footer__section footer__section--availability">
             <div className="footer__icon-wrap footer__icon-wrap--availability">
               <span className="footer__icon">🕒</span>
@@ -121,7 +132,7 @@ function Footer() {
             © {COPY_YEAR} Simran Surve. All rights reserved.
           </p>
           <p className="footer__disclaimer">
-            Confidentiality & Privacy Protected | Licensed & Insured
+            Confidentiality & Privacy Protected
           </p>
         </div>
       </div>
