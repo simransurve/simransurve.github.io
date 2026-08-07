@@ -29,7 +29,7 @@ function About() {
         <div className="about__header">
           <span className="about__label">About The Therapist</span>
           <h2 className="about__title">
-            <span>Simran Shubham Surve</span>
+            <span>Dr. Simran Shubham Surve</span>
           </h2>
           <p className="about__subtitle">
             Clinical Psychotherapist & Counsellor dedicated to transforming lives through evidence-based care

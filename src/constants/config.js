@@ -9,7 +9,7 @@ export const CONTACT_INFO = {
 };
 
 export const THERAPIST_INFO = {
-  name: "Simran Surve",
+  name: "Dr. Simran Shubham Surve",
   title: "Psychotherapist & Counsellor",
   credentials: "Clinical Psychology • 8+ Years Experience",
   bio: "Professional Online Therapy for Meaningful Change",

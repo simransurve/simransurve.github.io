@@ -129,7 +129,7 @@ function Footer() {
 
         <div className="footer__bottom">
           <p className="footer__copyright">
-            © {COPY_YEAR} Simran Surve. All rights reserved.
+            © {COPY_YEAR} Dr. Simran Shubham Surve. All rights reserved.
           </p>
           <p className="footer__disclaimer">
             Confidentiality & Privacy Protected
