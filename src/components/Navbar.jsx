@@ -51,7 +51,7 @@ function Navbar() {
         className="navbar__logo"
         onClick={() => handleNavClick("home")}
       >
-       Dr. Simran Surve
+       Simran Surve
       </div>
       {/* Hamburger Menu Button */}
       <button
